@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0641ACFB4D6AC11868BD090F /* Pods_BrimoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFD9C8A3B3DB70161AA876A /* Pods_BrimoApp.framework */; };
+		677A9178A3D084E20188E7FE /* Pods_BrimoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E332963B2AB84F8820C29 /* Pods_BrimoAppTests.framework */; };
+		CF853F7529B79545006AA3E6 /* TransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF853F7429B79545006AA3E6 /* TransactionController.swift */; };
+		CF853F7729B79571006AA3E6 /* InputPINScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF853F7629B79571006AA3E6 /* InputPINScreenController.swift */; };
+		CF853F7E29B7DE7B006AA3E6 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF853F7D29B7DE7B006AA3E6 /* ListController.swift */; };
+		CFB5C98229B589C300AAACF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5C98129B589C300AAACF0 /* AppDelegate.swift */; };
+		CFB5C98429B589C300AAACF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5C98329B589C300AAACF0 /* SceneDelegate.swift */; };
+		CFB5C98B29B589C500AAACF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB5C98A29B589C500AAACF0 /* Assets.xcassets */; };
+		CFB5C98E29B589C500AAACF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB5C98C29B589C500AAACF0 /* LaunchScreen.storyboard */; };
+		CFB5C9B329B5943D00AAACF0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5C9B229B5943D00AAACF0 /* HomeController.swift */; };
+		CFB5C9B529B5945300AAACF0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5C9B429B5945300AAACF0 /* LoginController.swift */; };
+		CFB5C9B829B5967600AAACF0 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5C9B729B5967600AAACF0 /* AuthHeaderView.swift */; };
+		CFB5C9BA29B64A8A00AAACF0 /* CostumTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5C9B929B64A8A00AAACF0 /* CostumTextField.swift */; };
+		CFB5C9BC29B651F100AAACF0 /* CostumeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5C9BB29B651F100AAACF0 /* CostumeButton.swift */; };
+		EE2A90B72C8A4EE7EF15DDEB /* Pods_BrimoApp_BrimoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC726E9F44ED5D7DF5F296F /* Pods_BrimoApp_BrimoAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFB5C99529B589C500AAACF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB5C97629B589C300AAACF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFB5C97D29B589C300AAACF0;
+			remoteInfo = BrimoApp;
+		};
+		CFB5C99F29B589C500AAACF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB5C97629B589C300AAACF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFB5C97D29B589C300AAACF0;
+			remoteInfo = BrimoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CB0B2BAD30510C494E06B8C /* Pods-BrimoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrimoApp.release.xcconfig"; path = "Target Support Files/Pods-BrimoApp/Pods-BrimoApp.release.xcconfig"; sourceTree = "<group>"; };
+		1C1C7FC16151D47195D1F403 /* Pods-BrimoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrimoAppTests.release.xcconfig"; path = "Target Support Files/Pods-BrimoAppTests/Pods-BrimoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		52C37C8934C450A4C11A0216 /* Pods-BrimoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrimoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BrimoAppTests/Pods-BrimoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		602E332963B2AB84F8820C29 /* Pods_BrimoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrimoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B7086BBC1896814285B45F /* Pods-BrimoApp-BrimoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrimoApp-BrimoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrimoApp-BrimoAppUITests/Pods-BrimoApp-BrimoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FFD9C8A3B3DB70161AA876A /* Pods_BrimoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrimoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F01FB5205482186D9EC456 /* Pods-BrimoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrimoApp.debug.xcconfig"; path = "Target Support Files/Pods-BrimoApp/Pods-BrimoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CF853F7429B79545006AA3E6 /* TransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionController.swift; sourceTree = "<group>"; };
+		CF853F7629B79571006AA3E6 /* InputPINScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPINScreenController.swift; sourceTree = "<group>"; };
+		CF853F7D29B7DE7B006AA3E6 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		CFB5C97E29B589C300AAACF0 /* BrimoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrimoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB5C98129B589C300AAACF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFB5C98329B589C300AAACF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CFB5C98A29B589C500AAACF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFB5C98D29B589C500AAACF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFB5C98F29B589C500AAACF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB5C99429B589C500AAACF0 /* BrimoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrimoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB5C99E29B589C500AAACF0 /* BrimoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrimoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB5C9B229B5943D00AAACF0 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		CFB5C9B429B5945300AAACF0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CFB5C9B729B5967600AAACF0 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		CFB5C9B929B64A8A00AAACF0 /* CostumTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumTextField.swift; sourceTree = "<group>"; };
+		CFB5C9BB29B651F100AAACF0 /* CostumeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumeButton.swift; sourceTree = "<group>"; };
+		EBC726E9F44ED5D7DF5F296F /* Pods_BrimoApp_BrimoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrimoApp_BrimoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C24F235CDE120A914138D2 /* Pods-BrimoApp-BrimoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrimoApp-BrimoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-BrimoApp-BrimoAppUITests/Pods-BrimoApp-BrimoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFB5C97B29B589C300AAACF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0641ACFB4D6AC11868BD090F /* Pods_BrimoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB5C99129B589C500AAACF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677A9178A3D084E20188E7FE /* Pods_BrimoAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB5C99B29B589C500AAACF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2A90B72C8A4EE7EF15DDEB /* Pods_BrimoApp_BrimoAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		190F36A9275B597CE339CA7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD9C8A3B3DB70161AA876A /* Pods_BrimoApp.framework */,
+				EBC726E9F44ED5D7DF5F296F /* Pods_BrimoApp_BrimoAppUITests.framework */,
+				602E332963B2AB84F8820C29 /* Pods_BrimoAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		534DA843490378358AE9870D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8F01FB5205482186D9EC456 /* Pods-BrimoApp.debug.xcconfig */,
+				0CB0B2BAD30510C494E06B8C /* Pods-BrimoApp.release.xcconfig */,
+				67B7086BBC1896814285B45F /* Pods-BrimoApp-BrimoAppUITests.debug.xcconfig */,
+				F6C24F235CDE120A914138D2 /* Pods-BrimoApp-BrimoAppUITests.release.xcconfig */,
+				52C37C8934C450A4C11A0216 /* Pods-BrimoAppTests.debug.xcconfig */,
+				1C1C7FC16151D47195D1F403 /* Pods-BrimoAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF853F7F29B7DEA4006AA3E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF853F7429B79545006AA3E6 /* TransactionController.swift */,
+				CFB5C9B229B5943D00AAACF0 /* HomeController.swift */,
+				CFB5C9B429B5945300AAACF0 /* LoginController.swift */,
+				CF853F7629B79571006AA3E6 /* InputPINScreenController.swift */,
+				CF853F7D29B7DE7B006AA3E6 /* ListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFB5C97529B589C300AAACF0 = {
+			isa = PBXGroup;
+			children = (
+				CFB5C98029B589C300AAACF0 /* BrimoApp */,
+				CFB5C97F29B589C300AAACF0 /* Products */,
+				534DA843490378358AE9870D /* Pods */,
+				190F36A9275B597CE339CA7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFB5C97F29B589C300AAACF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFB5C97E29B589C300AAACF0 /* BrimoApp.app */,
+				CFB5C99429B589C500AAACF0 /* BrimoAppTests.xctest */,
+				CFB5C99E29B589C500AAACF0 /* BrimoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFB5C98029B589C300AAACF0 /* BrimoApp */ = {
+			isa = PBXGroup;
+			children = (
+				CF853F7F29B7DEA4006AA3E6 /* Controller */,
+				CFB5C9B629B5963400AAACF0 /* Views */,
+				CFB5C9B129B5918A00AAACF0 /* Supporting */,
+				CFB5C98F29B589C500AAACF0 /* Info.plist */,
+			);
+			path = BrimoApp;
+			sourceTree = "<group>";
+		};
+		CFB5C9B129B5918A00AAACF0 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				CFB5C98129B589C300AAACF0 /* AppDelegate.swift */,
+				CFB5C98329B589C300AAACF0 /* SceneDelegate.swift */,
+				CFB5C98A29B589C500AAACF0 /* Assets.xcassets */,
+				CFB5C98C29B589C500AAACF0 /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		CFB5C9B629B5963400AAACF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFB5C9B729B5967600AAACF0 /* AuthHeaderView.swift */,
+				CFB5C9B929B64A8A00AAACF0 /* CostumTextField.swift */,
+				CFB5C9BB29B651F100AAACF0 /* CostumeButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFB5C97D29B589C300AAACF0 /* BrimoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB5C9A829B589C500AAACF0 /* Build configuration list for PBXNativeTarget "BrimoApp" */;
+			buildPhases = (
+				F72833121390077E47F25C85 /* [CP] Check Pods Manifest.lock */,
+				CFB5C97A29B589C300AAACF0 /* Sources */,
+				CFB5C97B29B589C300AAACF0 /* Frameworks */,
+				CFB5C97C29B589C300AAACF0 /* Resources */,
+				2262BB670C2DE2B83EA82D58 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrimoApp;
+			productName = BrimoApp;
+			productReference = CFB5C97E29B589C300AAACF0 /* BrimoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFB5C99329B589C500AAACF0 /* BrimoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB5C9AB29B589C500AAACF0 /* Build configuration list for PBXNativeTarget "BrimoAppTests" */;
+			buildPhases = (
+				AB581CB260C265456955CC1B /* [CP] Check Pods Manifest.lock */,
+				CFB5C99029B589C500AAACF0 /* Sources */,
+				CFB5C99129B589C500AAACF0 /* Frameworks */,
+				CFB5C99229B589C500AAACF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB5C99629B589C500AAACF0 /* PBXTargetDependency */,
+			);
+			name = BrimoAppTests;
+			productName = BrimoAppTests;
+			productReference = CFB5C99429B589C500AAACF0 /* BrimoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFB5C99D29B589C500AAACF0 /* BrimoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB5C9AE29B589C500AAACF0 /* Build configuration list for PBXNativeTarget "BrimoAppUITests" */;
+			buildPhases = (
+				52B152DB5383B4765A263338 /* [CP] Check Pods Manifest.lock */,
+				CFB5C99A29B589C500AAACF0 /* Sources */,
+				CFB5C99B29B589C500AAACF0 /* Frameworks */,
+				CFB5C99C29B589C500AAACF0 /* Resources */,
+				370977FC763041769A6287FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB5C9A029B589C500AAACF0 /* PBXTargetDependency */,
+			);
+			name = BrimoAppUITests;
+			productName = BrimoAppUITests;
+			productReference = CFB5C99E29B589C500AAACF0 /* BrimoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFB5C97629B589C300AAACF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CFB5C97D29B589C300AAACF0 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					CFB5C99329B589C500AAACF0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CFB5C97D29B589C300AAACF0;
+					};
+					CFB5C99D29B589C500AAACF0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CFB5C97D29B589C300AAACF0;
+					};
+				};
+			};
+			buildConfigurationList = CFB5C97929B589C300AAACF0 /* Build configuration list for PBXProject "BrimoApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFB5C97529B589C300AAACF0;
+			productRefGroup = CFB5C97F29B589C300AAACF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFB5C97D29B589C300AAACF0 /* BrimoApp */,
+				CFB5C99329B589C500AAACF0 /* BrimoAppTests */,
+				CFB5C99D29B589C500AAACF0 /* BrimoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFB5C97C29B589C300AAACF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB5C98E29B589C500AAACF0 /* LaunchScreen.storyboard in Resources */,
+				CFB5C98B29B589C500AAACF0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB5C99229B589C500AAACF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB5C99C29B589C500AAACF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2262BB670C2DE2B83EA82D58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrimoApp/Pods-BrimoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrimoApp/Pods-BrimoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrimoApp/Pods-BrimoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		370977FC763041769A6287FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrimoApp-BrimoAppUITests/Pods-BrimoApp-BrimoAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrimoApp-BrimoAppUITests/Pods-BrimoApp-BrimoAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrimoApp-BrimoAppUITests/Pods-BrimoApp-BrimoAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52B152DB5383B4765A263338 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrimoApp-BrimoAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB581CB260C265456955CC1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrimoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F72833121390077E47F25C85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrimoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFB5C97A29B589C300AAACF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB5C9B329B5943D00AAACF0 /* HomeController.swift in Sources */,
+				CF853F7E29B7DE7B006AA3E6 /* ListController.swift in Sources */,
+				CFB5C98229B589C300AAACF0 /* AppDelegate.swift in Sources */,
+				CFB5C98429B589C300AAACF0 /* SceneDelegate.swift in Sources */,
+				CFB5C9B829B5967600AAACF0 /* AuthHeaderView.swift in Sources */,
+				CFB5C9BC29B651F100AAACF0 /* CostumeButton.swift in Sources */,
+				CF853F7529B79545006AA3E6 /* TransactionController.swift in Sources */,
+				CFB5C9BA29B64A8A00AAACF0 /* CostumTextField.swift in Sources */,
+				CFB5C9B529B5945300AAACF0 /* LoginController.swift in Sources */,
+				CF853F7729B79571006AA3E6 /* InputPINScreenController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB5C99029B589C500AAACF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB5C99A29B589C500AAACF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFB5C99629B589C500AAACF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFB5C97D29B589C300AAACF0 /* BrimoApp */;
+			targetProxy = CFB5C99529B589C500AAACF0 /* PBXContainerItemProxy */;
+		};
+		CFB5C9A029B589C500AAACF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFB5C97D29B589C300AAACF0 /* BrimoApp */;
+			targetProxy = CFB5C99F29B589C500AAACF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFB5C98C29B589C500AAACF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFB5C98D29B589C500AAACF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFB5C9A629B589C500AAACF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFB5C9A729B589C500AAACF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFB5C9A929B589C500AAACF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8F01FB5205482186D9EC456 /* Pods-BrimoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V77F9397L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrimoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brimo.poc.BrimoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFB5C9AA29B589C500AAACF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB0B2BAD30510C494E06B8C /* Pods-BrimoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V77F9397L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrimoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brimo.poc.BrimoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFB5C9AC29B589C500AAACF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C37C8934C450A4C11A0216 /* Pods-BrimoAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V77F9397L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brimo.poc.BrimoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrimoApp.app/BrimoApp";
+			};
+			name = Debug;
+		};
+		CFB5C9AD29B589C500AAACF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C1C7FC16151D47195D1F403 /* Pods-BrimoAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V77F9397L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brimo.poc.BrimoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrimoApp.app/BrimoApp";
+			};
+			name = Release;
+		};
+		CFB5C9AF29B589C500AAACF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B7086BBC1896814285B45F /* Pods-BrimoApp-BrimoAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V77F9397L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brimo.poc.BrimoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrimoApp;
+			};
+			name = Debug;
+		};
+		CFB5C9B029B589C500AAACF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6C24F235CDE120A914138D2 /* Pods-BrimoApp-BrimoAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V77F9397L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brimo.poc.BrimoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrimoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFB5C97929B589C300AAACF0 /* Build configuration list for PBXProject "BrimoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB5C9A629B589C500AAACF0 /* Debug */,
+				CFB5C9A729B589C500AAACF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB5C9A829B589C500AAACF0 /* Build configuration list for PBXNativeTarget "BrimoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB5C9A929B589C500AAACF0 /* Debug */,
+				CFB5C9AA29B589C500AAACF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB5C9AB29B589C500AAACF0 /* Build configuration list for PBXNativeTarget "BrimoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB5C9AC29B589C500AAACF0 /* Debug */,
+				CFB5C9AD29B589C500AAACF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB5C9AE29B589C500AAACF0 /* Build configuration list for PBXNativeTarget "BrimoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB5C9AF29B589C500AAACF0 /* Debug */,
+				CFB5C9B029B589C500AAACF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFB5C97629B589C300AAACF0 /* Project object */;
+}
